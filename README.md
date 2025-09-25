@@ -1,55 +1,63 @@
-# ComfyUI TOML Selector Node
+# ComfyUI TOML Selector Nodes
 
-Dynamic selector node for ComfyUI that reads configuration from TOML files.
+Dynamic selector nodes for ComfyUI that read configuration from TOML files.
 
 ## Installation
 
 1. Copy this folder to: `ComfyUI/custom_nodes/comfy_select/`
-2. Install requirements: `pip install -r requirements.txt`
+2. Install requirements: `pip install toml`
 3. Restart ComfyUI
 
-## Usage
+## Available Nodes
 
-1. Edit `config.toml` to define your sections and values
-2. In ComfyUI, look for nodes under "utils/selector" category
-3. Available nodes:
-   - **TOML Selector**: Basic selector with string outputs
-   - **TOML Selector (Advanced)**: Shows full data + individual outputs
-   - **TOML Selector (Dynamic)**: Preserves data types (int, float, bool, string)
+### 1. TOML Selector (Static)
+- Fixed 10 outputs + JSON data
+- **Reload button** to refresh configuration
+- Preserves data types (int, float, bool, string)
+- Shows output info in console
+
+### 2. TOML Selector Dynamic
+- **Dynamic output labels** that change based on selected section
+- Output names update to match TOML keys
+- Reload button for configuration refresh
+- Up to 15 outputs + JSON data
+- Real-time visual updates
 
 ## Configuration
 
 Edit `config.toml`:
 
 ```toml
-[section_name]
-key1 = "value1"
-key2 = 42
-key3 = true
-key4 = 3.14
+[player_1]
+numero = 5
+jujuba = "doce"
+animal = "macaco"
 
-[another_section]
-option_a = "text"
-option_b = 100
+[donald]
+leao = "animal"
+software = "antivirus"
 ```
 
 ## Features
 
-- Dynamic section selection via dropdown
-- Automatic reload when config.toml changes
-- Support for multiple data types
-- Up to 10 outputs per section
-- JSON output for complex workflows
-- Real-time key display in console
+- **Type Preservation**: Numbers stay as numbers, not converted to strings
+- **Dynamic Labels**: Output names match your TOML keys (in Dynamic version)
+- **Reload Button**: Both nodes have a reload button to refresh config
+- **JSON Output**: First output always contains full section data as JSON
+- **Console Info**: Shows key names and types when processing
 
-## Example Workflows
+## Usage
 
-1. **Character Selection**: Define characters with attributes (health, speed, power)
-2. **Settings Presets**: Switch between different configuration presets
-3. **Level Parameters**: Load different level configurations dynamically
-4. **Material Properties**: Select between different material settings
+1. Place your `config.toml` in the node folder
+2. Add node to ComfyUI workspace
+3. Select section from dropdown
+4. For Dynamic version: outputs automatically rename to match keys
+5. Click reload button when you edit the TOML file
 
-## Node Outputs
+## Output Types
 
-- **json_data**: Full section data as JSON
-- **out_1 to out_10**: Individual values from the section (preserves types)
+All outputs use `ANY` type, preserving original data types:
+- `5` remains an integer
+- `"text"` remains a string
+- `true/false` remain booleans
+- `3.14` remains a float
