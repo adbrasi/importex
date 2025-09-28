@@ -42,14 +42,14 @@ class ProfileSelector:
                 "masterwork,(3dcgi,3d),",
                 "masterpiece, best quality, good quality, newest, very awa, absurdres, highres, hyper-detailed, excellent, latest",
                 "/workspace/Randomico/VioletJoi/",
-                "",
+                "(2d,anime,comic:1.25),ai-assisted, stable diffusion, nai diffusion, worst quality, worst aesthetic, bad quality, normal quality, average quality, oldest, old, early, very displeasing, displeasing, adversarial noise, unknown artist, banned artist, what, off-topic, artist request, text, artist name, signature, username, logo, censored, bar censor, mosaic censoring,ai-generated, watermark, copyright name, copyright symbol, resized, low quality, lowres, jpeg artifacts, compression artifacts, blurry,bad anatomy, bad hands, bad feet, disfigured, deformed, extra digits, fewer digits, missing fingers,  missing, extra, fewer, bad, bad proportions, bad perspective, aliasing, simple background, asymmetrical, monochrome,shading, jaggy lines, traditional media \(artwork\), microsoft paint \(artwork\), ms paint \(medium\), unclear, icon, letterboxed, framed, border, lossy-lossless, scan artifacts, out of frame, cropped, [abstract], [doesnotexist]",
                 1,
             ],
             "VixMavis": [
                 "masterwork,(artist:Shexyo),curvy",
                 "masterpiece, best quality, good quality, newest, very awa, absurdres, highres, hyper-detailed, excellent, latest,curvy_figure",
                 "/workspace/Randomico/vixmavis/",
-                "",
+                "flat_color,worst quality, worst aesthetic, bad quality, normal quality, average quality, oldest, ai-assisted, stable diffusion, nai diffusion, old, early, very displeasing, displeasing, adversarial noise, unknown artist, banned artist, what, off-topic, artist request, text, artist name, signature, username, logo, censored, bar censor, mosaic censoring,ai-generated, watermark, copyright name, copyright symbol, resized, low quality, lowres, jpeg artifacts, compression artifacts, blurry,bad anatomy, bad hands, bad feet, disfigured, deformed, extra digits, fewer digits, missing fingers,  missing, extra, fewer, bad, bad proportions, bad perspective, aliasing, simple background, asymmetrical, monochrome,shading, jaggy lines, traditional media \(artwork\), microsoft paint \(artwork\), ms paint \(medium\), unclear, icon, letterboxed, framed, border, lossy-lossless, scan artifacts, out of frame, cropped, [abstract], [doesnotexist],anime_screenshot",
                 0,
             ],
         }
