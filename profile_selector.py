@@ -18,7 +18,7 @@ class ProfileSelector:
         }
 
     # 5 string outputs
-    RETURN_TYPES = ("STRING", "STRING", "STRING", "STRING", "STRING")
+    RETURN_TYPES = ("STRING", "STRING", "STRING", "STRING", "NUMBER")
     RETURN_NAMES = ("output_1", "output_2", "output_3", "output_4", "output_5")
 
     FUNCTION = "select_profile"
@@ -37,15 +37,15 @@ class ProfileSelector:
                 "",  # output_5
             ],
             "VioletJoi": [
-                "masterwork,",  # output_1
-                "masterpiece, best quality, good quality, newest, very awa, absurdres, highres",  # output_2
+                "masterwork,(3dcgi,3d),",  # output_1
+                "masterpiece, best quality, good quality, newest, very awa, absurdres, highres, hyper-detailed, excellent, latest",  # output_2
                 "/workspace/Randomico/VioletJoi/",  # output_3
                 "",  # output_4
                 "",  # output_5
             ],
             "VixMavis": [
-                "masterwork,(3dcgi,3d),",  # output_1
-                "masterpiece, best quality, good quality, newest, very awa, absurdres, highres,intricate, hyper-detailed, excellent, latest, ((cinematic lighting))",  # output_2
+                "masterwork,(artist:Shexyo),curvy",  # output_1
+                "masterpiece, best quality, good quality, newest, very awa, absurdres, highres, hyper-detailed, excellent, latest,curvy_figure",  # output_2
                 "/workspace/Randomico/vixmavis/",  # output_3
                 "",  # output_4
                 "",  # output_5
